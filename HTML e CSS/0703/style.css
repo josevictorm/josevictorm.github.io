@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap");
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	font-family: "Fira Sans", sans-serif;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 40px 0;
+}
+
+.menu-links ul {
+	display: flex;
+	list-style: none;
+	gap: 30px;
+}
+
+a {
+	text-decoration: none;
+	color: #141414;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.intro {
+	max-width: 1003px;
+	margin-top: 80px;
+	display: flex;
+	align-items: center;
+}
+
+.intro img {
+	max-width: 360px;
+}
+
+.titulo {
+	margin-left: 140px;
+	position: relative;
+}
+
+h1 {
+	font-size: 4rem;
+	line-height: 80px;
+}
+
+.titulo p {
+	font-size: 1.5rem;
+	line-height: 29px;
+	color: #525252;
+}
+
+.titulo::before {
+	content: "";
+	position: absolute;
+	background: url("./img/detalhe.svg");
+	width: 128px;
+	height: 128px;
+	z-index: -1;
+	top: -30px;
+	left: -40px;
+}
+
+main {
+	margin-top: 120px;
+}
+
+.experiencia {
+	display: grid;
+	grid-template-columns: 329px 1fr;
+	justify-items: center;
+}
+
+.experiencia h2 {
+	font-size: 9rem;
+	text-transform: uppercase;
+	color: #e0e0e0;
+	word-break: break-all;
+}
+
+.experiencia-container {
+	/* display: flex; */
+	/* flex-wrap: wrap; */
+	margin-left: 176px;
+}
+
+.resumo {
+	max-width: 560px;
+	max-height: 128px;
+	margin-bottom: 60px;
+}
+
+.resumo p {
+	font-size: 1.5rem;
+	line-height: 2rem;
+	color: #525252;
+}
+
+.resumo strong {
+	color: #141414;
+}
+
+.experiencia-items {
+	grid-column: 2;
+	display: flex;
+	background-color: #f5f5f5;
+	border-radius: 3px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.titulo-desc {
+	max-width: 325px;
+	position: relative;
+}
+
+.titulo-desc p {
+	font-size: 0.875rem;
+}
+
+.titulo-desc h3 {
+	font-size: 1.125rem;
+	margin-bottom: 10px;
+}
+
+.cargo-linguagens h3 {
+	margin-bottom: 10px;
+}
+
+.linguagens-items {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	font-size: 0.875rem;
+}
+
+.cargo-linguagens {
+	margin-left: 100px;
+}
+
+.linguagens-items p {
+	padding: 5px 10px;
+	background-color: #ffffff;
+}
+
+.titulo-desc::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 4px;
+	height: 20px;
+	left: -23px;
+
+	background: linear-gradient(180deg, #b6f829 0%, #67dd0a 100%);
+}
+
+.none {
+	opacity: 0;
+}
+
+.ano1::before {
+	content: "2045";
+	position: absolute;
+	font-size: 0.875rem;
+	left: -90px;
+	top: 2px;
+	color: #525252;
+}
+
+.ano2::before {
+	content: "2044-45";
+	position: absolute;
+	font-size: 0.875rem;
+	left: -105px;
+	top: 2px;
+	color: #525252;
+}
+
+.ano3::before {
+	content: "2044";
+	position: absolute;
+	font-size: 0.875rem;
+	left: -90px;
+	top: 2px;
+	color: #525252;
+}
+
+.formacao-background {
+	background-color: #141414;
+	margin-top: 60px;
+	padding-top: 110px;
+}
+
+.formacao-margin {
+	margin: 0 auto;
+	display: grid;
+	max-width: 1200px;
+	grid-template-columns: 378px 1fr;
+}
+
+.formacao h2 {
+	color: #000000;
+	font-size: 9rem;
+	line-height: 9rem;
+	text-transform: uppercase;
+	word-break: break-all;
+}
+
+.formacao-container {
+	margin-left: 130px;
+}
+
+.conteudo {
+	color: #a3a3a3;
+}
+
+.conteudo p {
+	font-size: 1.5rem;
+	line-height: 2rem;
+	padding-right: 160px;
+}
+
+.conteudo strong {
+	color: white;
+}
+
+.faculdade-item {
+	color: #a3a3a3;
+	background-color: #000000;
+	padding: 20px;
+	height: 190px;
+	border-radius: 5px;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
+.faculdades-container {
+	margin-top: 60px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 26px;
+}
+
+.faculdade-titulo p {
+	font-size: 0.875rem;
+}
+
+.faculdade-curso p {
+	margin-top: 15px;
+	color: white;
+	font-size: 1.125rem;
+	font-weight: bold;
+}
+
+.faculdade-curso {
+	position: relative;
+}
+
+.faculdade-curso::before {
+	content: "";
+	position: absolute;
+	display: block;
+	background: linear-gradient(180deg, #b6f829 0%, #67dd0a 100%);
+	width: 4px;
+	height: 20px;
+
+	top: 17px;
+	left: -23px;
+}
+
+.fc1 p {
+	padding-right: 50px;
+	line-height: 1.563rem;
+}
+
+.fc2 p {
+	padding-right: 100px;
+	line-height: 1.563rem;
+}
+
+.fc3 p {
+	line-height: 1.563rem;
+}
+
+.cursos-idioma {
+	margin-top: 60px;
+	position: relative;
+}
+
+.cursos-intensivos h3 {
+	color: #8f8f8f;
+	font-size: 0.875rem;
+	margin-bottom: 30px;
+}
+
+.curso-nome-hora {
+	display: flex;
+	color: white;
+	font-size: 1.125rem;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.hora {
+	color: #8f8f8f;
+}
+
+.cursos-svg::before {
+	content: "";
+	position: absolute;
+	background-image: url("./img/cursos.svg");
+	height: 24px;
+	width: 24px;
+	left: -35px;
+	top: -5px;
+}
+
+.cursos-idioma h3 {
+	color: #8f8f8f;
+	font-size: 0.875rem;
+	margin-bottom: 30px;
+}
+
+.idioma-nivel {
+	display: flex;
+	color: white;
+	margin-bottom: 20px;
+}
+
+.cinza {
+	color: #8f8f8f;
+	margin-left: 8px;
+}
+
+.idioma-svg::before {
+	content: "";
+	position: absolute;
+	background-image: url("./img/idiomas.svg");
+	height: 24px;
+	width: 24px;
+	left: -35px;
+	top: -5px;
+}
+
+.idioma-svg {
+	margin-bottom: 120px;
+}
+
+footer {
+	background-color: #000000;
+}
+
+.footer-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-top: 120px;
+	justify-items: center;
+	position: relative;
+}
+
+.footer-resumo {
+	color: #cccccc;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	padding-right: 170px;
+	align-self: center;
+}
+
+.footer-contato {
+	color: white;
+	font-size: 2.25rem;
+	line-height: 2.5rem;
+}
+
+.footer-contato p {
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+
+.direitos {
+	color: #8f8f8f;
+	font-size: 1.125rem;
+	justify-self: left;
+	margin-top: 120px;
+	margin-bottom: 60px;
+}
+
+.footer-container::before {
+	content: "";
+	background-image: url("./img/detalhe.svg");
+	width: 128px;
+	height: 128px;
+	position: absolute;
+	top: -60px;
+	left: 0;
+}
+
+.experiencia-items:nth-child(odd) {
+	padding-bottom: 33px;
+}

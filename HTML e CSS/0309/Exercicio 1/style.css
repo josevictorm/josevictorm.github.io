@@ -1,0 +1,152 @@
+body {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial;
+	background: #f7f7f7;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	height: 150px;
+}
+
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+}
+
+.opcao {
+	background: white;
+	padding: 15px 30px;
+	text-decoration: none;
+	color: black;
+	border-radius: 3px;
+	font-weight: 600;
+}
+
+main {
+	display: grid;
+	margin-top: 60px;
+	grid-template-columns: 1fr 1fr;
+	border-radius: 5px;
+	justify-self: center;
+	position: relative;
+}
+
+img {
+	max-height: 400px;
+}
+
+p {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 35px;
+	margin: 0;
+}
+
+.ver_mais {
+	text-decoration: none;
+	color: white;
+	padding: 15px 30px;
+	background: red;
+	border-radius: 5px;
+}
+
+.descricao {
+	display: flex;
+	flex-wrap: wrap;
+	width: 500px;
+	height: 400px;
+	background-color: white;
+	justify-self: right;
+	align-content: center;
+	justify-content: right;
+	padding-right: 40px;
+}
+
+.descricao > p {
+	width: 450px;
+	text-align: right;
+}
+
+.linha {
+	position: absolute;
+	background: red;
+	height: 4px;
+	width: 60px;
+	justify-self: center;
+	top: 30px;
+}
+
+.vantagens {
+	/* background-color: wheat; */
+	width: 500px;
+	align-self: center;
+	justify-self: right;
+	padding-right: 40px;
+}
+
+.vantagens > p {
+	font-size: 64px;
+	text-align: right;
+	color: #c6c6c6;
+}
+
+.carac-container {
+	width: 509px;
+	background: white;
+	padding: 30px 0;
+}
+
+.carac {
+	margin: 30px 50px;
+	width: 400px;
+	display: grid;
+	grid-template-columns: 32px 1fr;
+}
+
+.carac svg {
+	grid-column: 1;
+}
+
+.carac > p,
+h3 {
+	margin: 0;
+	display: inline-block;
+	grid-column: 2;
+	margin-left: 20px;
+	margin-top: 6px;
+}
+
+.carac > p {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	width: 1fr;
+	height: 100px;
+	background: white;
+	margin-top: 70px;
+	place-content: center;
+}
+
+
+h1::before {
+	content: "";
+	display: ;
+}

@@ -1,0 +1,26 @@
+.container {
+	display: grid;
+	grid-template-columns: 200px 200px;
+	background: grey;
+	justify-items: end;
+	/* justify-content: end; */
+}
+
+.green {
+	background: green;
+	height: 200px;
+}
+
+.blue {
+	background: blue;
+	align-self: center;
+	justify-self: center;
+}
+
+.yellow {
+	background: yellow;
+}
+
+.red {
+	background: red;
+}
