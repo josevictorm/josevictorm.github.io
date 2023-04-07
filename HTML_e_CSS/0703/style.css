@@ -23,6 +23,7 @@
 a {
 	text-decoration: none;
 	color: #141414;
+	font-size: 1.125rem;
 }
 
 .container {
@@ -406,4 +407,8 @@ footer {
 
 .experiencia-items:nth-child(odd) {
 	padding-bottom: 33px;
+}
+
+.titulo p {
+	padding: 30px 0;
 }
